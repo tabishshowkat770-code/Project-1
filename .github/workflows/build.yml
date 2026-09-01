@@ -9,10 +9,10 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Build with Buildozer
-        uses: Artemis-Skade/buildozer-action@v1.2
+        uses: ArtemS-Skade/buildozer-action@v1.2
         with:
           command: buildozer -v android debug
           subfolder: .
